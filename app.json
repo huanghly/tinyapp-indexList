@@ -1,0 +1,9 @@
+{
+  "pages": [
+     "pages/index/index",
+    "pages/pullLoading/index"
+  ],
+  "window": {
+    "defaultTitle": "上拉刷新"
+  }
+}

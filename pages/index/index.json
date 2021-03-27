@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "锚点列表",
+  "usingComponents": {
+        "index-bar": "./components/index-bar/index",
+         "index-anchor": "./components/index-anchor/index"
+    }
+}

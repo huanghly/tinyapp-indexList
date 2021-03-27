@@ -1,0 +1,9 @@
+
+page {
+  background-color: #eeeeee;
+}
+
+.item-line {
+  padding: 5rpx 20rpx;
+  background-color: #fff;
+}

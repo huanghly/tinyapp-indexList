@@ -1,0 +1,13 @@
+
+
+    <view>
+  <index-bar indexList="{{indexList}}">
+    <block a:for="{{list}}">
+      <index-anchor index="{{item.title}}">
+        <view style="height: 50px">{{item.title}}x</view>
+      </index-anchor>
+      <view class="item-line" onTap="switchHandle" a:for="{{item.arr}}" a:for-item="itemName">{{itemName}}</view>
+    </block>
+  </index-bar>
+</view>
+

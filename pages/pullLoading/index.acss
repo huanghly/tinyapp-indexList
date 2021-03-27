@@ -1,0 +1,114 @@
+.schedule-container{
+   width: 100vw;
+  height: 100vh;
+    overflow: hidden;
+}
+.schedule-scroll {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+.spinner {
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner .bounce {
+  margin-top: 20rpx;
+  width: 13rpx;
+  height: 21rpx;
+  display: inline-block;
+  animation-fill-mode: both;
+  margin-left: 13rpx;
+  transform: skewX(-15deg);
+}
+
+.spinner .bounce1 {
+  background: #108EE9;
+  animation: bouncedelay1 2.1s infinite linear;
+}
+
+.spinner .bounce2 {
+  background: #9DCDEF;
+  animation: bouncedelay2 2.1s infinite linear;
+}
+
+.spinner .bounce3 {
+  background: #EAECF3;
+  animation: bouncedelay3 2.1s infinite linear;
+}
+
+.spinner .spinner-word {
+  margin-top: 24rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+@keyframes bouncedelay1 {
+  0% {
+    background: #108EE9;
+  }
+  50% {
+    background: #9DCDEF;
+  }
+  100% {
+    background: #EAECF3;
+  }
+}
+
+@keyframes bouncedelay2 {
+  0% {
+    background: #9DCDEF;
+  }
+  50% {
+    background: #EAECF3;
+  }
+  100% {
+    background: #108EE9;
+  }
+}
+
+@keyframes bouncedelay3 {
+  0% {
+    background: #EAECF3;
+  }
+  50% {
+    background: #108EE9;
+  }
+  100% {
+    background: #9DCDEF;
+  }
+}
+
+.schedule-detail {
+  width: 100%;
+  height: 218rpx;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+}
+.schedule-place , .schedule-trainNumber ,.schedule-time {
+  padding: 30rpx 30rpx 35rpx 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size:32rpx;
+  color: #333333;
+}
+.schedule-money {
+  color:#E8541E;
+}
+.font {
+  color:#999999;
+  font-size: 28rpx;
+}
+.padd {
+  padding: 0rpx 30rpx 20rpx 30rpx;;
+}

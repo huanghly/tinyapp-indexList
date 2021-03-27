@@ -1,0 +1,30 @@
+<scroll-view class="adc-index-bar-scroll" scroll-y="{{true}}" onScroll="onScroll"
+             style="height: {{height}}"
+             scroll-into-view="{{scrollIntoView}}"
+             scroll-with-animation="{{scrollWithAnimation}}"
+             scroll-animation-duration="{{scrollAnimationDuration}}">
+    <view class="adc-index-bar">
+        <slot/>
+
+        <view a:if="{{ showSidebar }}"
+              style="z-index: {{ zIndex + 1 }}"
+              class="adc-index-bar__sidebar"
+              catchTap="onClick"
+              catchTouchEnd="onTouchStop"
+              catchTouchCancel="onTouchStop">
+            <view a:for="{{ indexList }}"
+                  a:key="index"
+                  class="adc-index-bar__index"
+                  style="color: {{ activeAnchorIndex === index ? highlightColor : '' }}"
+                  data-index="{{ item }}">
+                {{ item }}
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+ 
+<!-- <view class="index-bar-wrap" ref="popNoticeRef">
+  <slot/>
+</view> -->
+
